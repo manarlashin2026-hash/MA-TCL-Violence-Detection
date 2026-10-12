@@ -1,0 +1,7 @@
+data/
+*.pth
+__pycache__/
+/fight_model_*/
+/rwf2000_official_split_results*/
+/revision_figures/
+videomae_lora/

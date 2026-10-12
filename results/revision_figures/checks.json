@@ -1,0 +1,78 @@
+{
+  "scfight": {
+    "checkpoint": "./fight_model_ma_tcl_final/best_ma_tcl_model.pth",
+    "n_eval": 60,
+    "recomputed_accuracy": 0.9333333333333333,
+    "accuracy_in_training_log": 0.9333333333333333,
+    "confusion": {
+      "TN": 28,
+      "FP": 2,
+      "FN": 2,
+      "TP": 28
+    },
+    "gradcam_cases": [
+      [
+        "TP",
+        "data/SC-Fight-300/fight/fi143.mp4",
+        0.8430570363998413
+      ],
+      [
+        "TN",
+        "data/SC-Fight-300/noFight/nofi038.mp4",
+        0.05872255191206932
+      ],
+      [
+        "FP",
+        "data/SC-Fight-300/noFight/nofi021.mp4",
+        0.8398653864860535
+      ],
+      [
+        "FN",
+        "data/SC-Fight-300/fight/fi134.mp4",
+        0.06064055114984512
+      ]
+    ]
+  },
+  "rwf": {
+    "checkpoint": "./rwf2000_official_split_results/last_checkpoint.pth",
+    "n_eval": 400,
+    "recomputed_accuracy": 0.895,
+    "accuracy_in_training_log": 0.895,
+    "confusion": {
+      "TN": 195,
+      "FP": 5,
+      "FN": 37,
+      "TP": 163
+    },
+    "gradcam_cases": [
+      [
+        "TP",
+        "data/RWF-2000/val/Fight/0Ow4cotKOuw_2.avi",
+        0.833256721496582
+      ],
+      [
+        "TN",
+        "data/RWF-2000/val/NonFight/fGyFpyjd_0.avi",
+        0.08882028609514236
+      ],
+      [
+        "FP",
+        "data/RWF-2000/val/NonFight/ngv36FBY_0.avi",
+        0.8284536004066467
+      ],
+      [
+        "FN",
+        "data/RWF-2000/val/Fight/bW2vHhYbzHM_0.avi",
+        0.09005298465490341
+      ]
+    ]
+  },
+  "rwf_tcl_vs_notcl": {
+    "labels_identical_order": true,
+    "acc_tcl": 0.895,
+    "acc_notcl": 0.8825,
+    "tcl_correct_notcl_wrong": 13,
+    "tcl_wrong_notcl_correct": 8,
+    "mcnemar_exact_p": 0.38331031799316406
+  }
+}
